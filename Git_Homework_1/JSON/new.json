@@ -1,6 +1,6 @@
 {
-    "Name": "Vladyslav Kovalchuk",
-    "Age": 26,
-    "Home pet": 2,
-    "Salary": "1500$"
+    "name": "Vladyslav Kovalchuk",
+    "age": 26,
+    "home pet": 2,
+    "salary": "1500$"
 }
