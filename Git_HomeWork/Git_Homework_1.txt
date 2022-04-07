@@ -9,7 +9,7 @@ Linux terminal (GitBash) commands
 6) Создать 5 файлов (3 txt, 2 json) - touch file1.txt file2.txt file3.txt file4.json file5.json
 7) Создать 3 папки - mkdir papka1 papka2 papka3
 
-8. Вывести список содержимого папки ls -la
+8. Вывести список содержимого папки - ls -la
 9) + Открыть любой txt файл - vim file1.txt
 10) + написать туда что-нибудь, любой текст - I "текст"
 11) + сохранить и выйти - Esс :wq
@@ -37,11 +37,10 @@ curl 'http://162.55.220.72:5005/terminal-hw-request'
 
 Step - 2
 curl 'http://162.55.220.72:5005/get_method?name=Vladyslav&age=26'
+
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100    19  100    19    0     0    138      0 --:--:-- --:--:-- --:--:--   139["Vladyslav","26"]
-
-
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
