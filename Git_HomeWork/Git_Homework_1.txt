@@ -26,10 +26,9 @@ Linux terminal (GitBash) commands
 =========
 
 Задание *
-1) Отправить http запрос на сервер.
-  http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+1) Отправить http запрос на сервер - http://162.55.220.72:5005/terminal-hw-request
 
-curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+curl http://162.55.220.72:5005/terminal-hw-request
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -47,7 +46,7 @@ cd folder1
 touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
 mkdir papka_1 papka_2 papka_3
 ls -la
-mv file_1.txt papka_1/file_1.txt
+mv file_1.txt papka_1
 
 echo "Всё работает"
 
