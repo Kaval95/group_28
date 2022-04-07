@@ -28,11 +28,19 @@ Linux terminal (GitBash) commands
 Задание *
 1) Отправить http запрос на сервер - http://162.55.220.72:5005/terminal-hw-request
 
-curl http://162.55.220.72:5005/terminal-hw-request
+Step - 1
+curl 'http://162.55.220.72:5005/terminal-hw-request'
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   237  100   237    0     0   1694      0 --:--:-- --:--:-- --:--:--  1717{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+Step - 2s
+curl 'http://162.55.220.72:5005/get_method?name=Vladyslav&age=26'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    19  100    19    0     0    138      0 --:--:-- --:--:-- --:--:--   139["Vladyslav","26"]
+
 
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
