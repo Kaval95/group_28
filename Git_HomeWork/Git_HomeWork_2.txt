@@ -27,13 +27,13 @@ the third 3
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2” - cat >> tf_3.txt
                                                                        the sec 2
 
- 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3” - cat >> /a/IT/dir_1/tf_2.txt
+ 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3” - cat >> ../tf_2.txt
                                                                        the sec 3
 
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2” - cat >> tf_3.txt
                                                                           the SeCoNd 2
 
- 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2” - cat >> /a/IT/dir_1/tf_2.txt
+ 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2” - cat >> ../tf_2.txt
                                                                           the seConD 2
  
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк. - cat tf_4.txt
@@ -41,10 +41,11 @@ the third 3
 
  15. Сделать текстовый файл tF_5.txt в котором будет 13 строк. - cat tf_5.txt
                                                                  + 13 рандомных строк
- 16. Вывести список всех файлов в папке. - ls -la
-                                          -rw-r--r-- 1 Petlya 197121 65 Apr 14 19:18 tF_5.txt
-                                          -rw-r--r-- 1 Petlya 197121 48 Apr 14 14:22 tf_3.txt
-                                          -rw-r--r-- 1 Petlya 197121 77 Apr 14 15:28 tf_4.txt
+ 16. Вывести список всех файлов в папке. - find . -type f
+                                           ./tf_3.txt
+                                           ./tf_4.txt
+                                           ./tF_5.txt
+
  17. Выйти из папки inner_dir_1 - cd ..
  18. Вывести содержимое файла tf_3.txt в терминал. - cat ./inner_dir_1/tf_3.txt
                                                      qwe
@@ -54,10 +55,10 @@ the third 3
                                                      the sec 3
                                                      the SeCoNd 2
 
- 19. Найти путь к файлу tf_4.txt - find -name tf_4.txt
-                                   ./inner_dir_1/tf_4.txt
+ 19. Найти путь к файлу tf_4.txt - readlink -m tf_2.txt
+                                   /a/IT/dir_1/inner_dir_1/tf_2.txt
 
- 20. Очистить файл tf_4.txt от содержимого без удаления самого файла. - echo > tf_4.txt
+ 20. Очистить файл tf_4.txt от содержимого без удаления самого файла. - > tf_4.txt
 
  21. Найти путь к файлам у которых есть  “tf” в названии. - find . -name "tf*.txt"
                                                             ./inner_dir_1/tf_3.txt
