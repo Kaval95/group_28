@@ -1,19 +1,19 @@
 Termial. HW_2
 
- 1. Сделать папку dir_1 - mkdir dir_1
- 2. Зайти в папку dir_1 - cd dir_1
- 3. Создать папку inner_dir_1 - mkdir inner_dir_1
- 4. Посмотреть где ты находишься - pwd
- 5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt - touch tf_1.txt
+ 1. Сделать папку dir_1 - `mkdir dir_1`
+ 2. Зайти в папку dir_1 - `cd dir_1`
+ 3. Создать папку inner_dir_1 - `mkdir inner_dir_1`
+ 4. Посмотреть где ты находишься -`pwd`
+ 5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt - `touch tf_1.txt`
  6. Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками:
 - the first 1
 - the second 2
 - the third 3
 
-cat > tf_2.txt
+`cat > tf_2.txt
 the first 1
 the second 2
-the third 3
+the third 3`
 
  7. Зайти в папку inner_dir_1 - cd inner_dir_1
  8. Через cat сделать текстовый файл tf_3.txt c любыми строками - `cat > tf_3.txt
