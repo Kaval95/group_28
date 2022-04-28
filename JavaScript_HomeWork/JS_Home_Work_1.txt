@@ -51,8 +51,8 @@ let item_6_type = typeof(item_6);
 
  21. Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——  
 
-console.log("item_6 == " + typeof(item_6) + "," + " item_6_type == " + typeof(item_6_type))
-Result - item_6 == number, item_6_type == string
+console.log("item_6 == " + item_6 + "," + " item_6_type == " + item_6_type)
+Result - item_6 == 15, item_6_type == number
 
  22. Создать переменную item_7 и в ней преобразовать item_6 в String.
 
@@ -65,8 +65,8 @@ let item_7_type = typeof(item_7);
 
  25. Вывести в консоль тип данных item_7 в виде ——  “item_7 == ”  item_7,  “item_7_type == ”  item_7_type ——  
 
-console.log("item_7 == " + typeof(item_7) + "," + " item_7_type == " + typeof(item_7_type))
-Result - item_7 == string, item_7_type == string
+console.log("item_7 == " + item_7 + "," + " item_7_type == " + item_7_type)
+Result - item_7 == 15, item_7_type == string
 
  26. Создать переменную “age_1” и присвоить ей значение 10
  27. Создать переменную “age_2” и присвоить ей значение 18
@@ -90,5 +90,3 @@ if(age_1<age_2) {
 } else {
     console.log("Technical work")
 }
-
-
