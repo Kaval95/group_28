@@ -60,19 +60,19 @@ the third 3
 
  20. Очистить файл tf_4.txt от содержимого без удаления самого файла. - > inner_dir_1/tf_4.txt
 
- 21. Найти путь к файлам у которых есть  “tf” в названии. -  realpath "tf*" *
-                                                             /a/IT/dir_1/tf*
-                                                             /a/IT/dir_1/inner_dir_1
+ 21. Найти путь к файлам у которых есть  “tf” в названии. -  realpath $(find -name "tf*")
+                                                             /a/IT/dir_1/inner_dir_1/tf_3.txt
+                                                             /a/IT/dir_1/inner_dir_1/tf_4.txt
                                                              /a/IT/dir_1/tf_1.txt
                                                              /a/IT/dir_1/tf_2.txt
-                                                             /a/IT/dir_1/tf_4.txt
+
 
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре. - realpath $(find -iname "tf*")
-                                                                                     /a/IT/Practis/dir_1/inner_dir_1/tf_3.txt
-                                                                                     /a/IT/Practis/dir_1/inner_dir_1/tf_4.txt
-                                                                                     /a/IT/Practis/dir_1/inner_dir_1/tF_5.txt
-                                                                                     /a/IT/Practis/dir_1/tf_1.txt
-                                                                                     /a/IT/Practis/dir_1/tf_2.txt
+                                                                                     /a/IT/dir_1/inner_dir_1/tf_3.txt
+                                                                                     /a/IT/dir_1/inner_dir_1/tf_4.txt
+                                                                                     /a/IT/dir_1/inner_dir_1/tF_5.txt
+                                                                                     /a/IT/dir_1/tf_1.txt
+                                                                                     /a/IT/dir_1/tf_2.txt
 
                               
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке. - grep sec *
@@ -90,7 +90,7 @@ the third 3
                                                                                    grep: inner_dir_1: Is a directory
                                                                                    tf_2.txt:the sec 3
 
- 26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке - grep -w -i sec *
+ 26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке - grep -wi sec *
                                                                                                     grep: inner_dir_1: Is a directory
                                                                                                     tf_2.txt:the sec 3
 
@@ -107,9 +107,10 @@ the third 3
                                                                                            inner_dir_1/tf_3.txt:the second 2
                                                                                            tf_2.txt:the second 2
 
- 30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке - grep -l second *
-                                                                                                          grep: inner_dir_1: Is a directory
-                                                                                                           tf_2.txt
+ 30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке - realpath $(grep -rl second *)
+                                                                                                          /a/IT/inner_dir_1/tf_3.txt
+                                                                                                          /a/IT/dir_1/tf_2.txt
+
 
  31. Найти все строки во всех файлах где нет комбинации “second” - grep -r -v second
                                                                    inner_dir_1/tf_3.txt:qwe
