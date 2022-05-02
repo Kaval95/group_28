@@ -145,3 +145,34 @@ function chekcAge(age){
 }
 
 chekcAge(81)
+
+3**:
+Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+
+let age_2 = 18
+let age_3 = 60
+
+function chekcAge(age){
+
+    age_new_value = Number(age)
+
+    if (typeof age_new_value === "number") 
+          if (age_new_value < age_2) {
+            console.log("You dont have access cause your age is " + age_new_value + ". Its less then.")
+        } else if(age_new_value >= age_2 && age_new_value < age_3) {
+            console.log("Welcome")  
+        } else if(age_new_value > age_3) {
+            console.log("Keep calm and look Culture channel.")
+        } else {
+            console.log("Technical work")
+        }
+
+    
+    else{
+       console.log("Error! Value age = " + typeof age + " please write number value.")
+   } 
+
+}
+
+chekcAge("2")
+chekcAge("61s")
