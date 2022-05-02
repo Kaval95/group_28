@@ -146,8 +146,33 @@ touch skills.xml
 </learning_on_the_course>
  
  32. Отправить сразу 2 файла на внешний репозиторий.
+
+git add preferences.xml skills.xml
+
  33. На веб интерфейсе создать файл bug_report.xml.
  34. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 35. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML
+ 35. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+<bug_report>
+    <id>15</id>
+    <title>Не отображается поле email на главной странице сайта при регистрации нового пользователя</title>
+     <summary>
+         <steps_to_reproduce>#</steps_to_reproduce>
+         <actual_result>#</actual_result>
+         <expected_result>#</expected_result>
+         <attachment>screenshot, video, link, log file</attachment>
+     </summary>    
+    <severity>S1 - Blocker</severity>
+    "<priority>P1 - High</priority>"
+    <environmen>#</environmen>
+    <build_version>#</build_version>
+</bug_report> 
+
  36. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 37. Синхронизировать внешний и локальный репозиторий XML
+ 37. Синхронизировать внешний и локальный репозиторий XML.
+
+git fetch
+git pull
+
+git commit -am "Final update data"
+git push
