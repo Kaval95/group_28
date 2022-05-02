@@ -1,1 +1,14 @@
-
+{
+    "id": 15,
+    "title": "Не отображается поле email на главной странице сайта при регистрации нового пользователя",
+    "summary": {
+        "step to reproduce": "#",
+        "actual result": "#",
+        "expected result": "#",
+        "attachment": "screenshot, video, link, log file"
+    },
+    "severity": "S1 - Blocker",
+    "priority": "P1 - High",
+    "environmen": "#",
+    "build version": "#"
+}
