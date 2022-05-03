@@ -154,14 +154,14 @@ let age_3 = 60
 
 function chekcAge(age){
 
-    age_new_value = Number(age)
+    age = Number(age)
 
-    if (typeof age_new_value === "number") 
-          if (age_new_value < age_2) {
-            console.log("You dont have access cause your age is " + age_new_value + ". Its less then.")
-        } else if(age_new_value >= age_2 && age_new_value < age_3) {
+    if (!isNaN(age)) 
+          if (age < age_2) {
+            console.log("You dont have access cause your age is " + age + ". Its less then.")
+        } else if(age >= age_2 && age < age_3) {
             console.log("Welcome")  
-        } else if(age_new_value > age_3) {
+        } else if(age > age_3) {
             console.log("Keep calm and look Culture channel.")
         } else {
             console.log("Technical work")
