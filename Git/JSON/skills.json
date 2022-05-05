@@ -1,8 +1,0 @@
-{
-    "http": "Методы, Запросы, Коды ответов",
-    "xml_json": "Структура",
-    "api": "Postman (JS, автотесты API)",
-    "charles_fiddler": "Снифинг http web трафика",
-    "ios": "Сборка приложений на XCode",
-    "sql": "Create, Delete, Drop, Insert Into, Select, From, Where, Join"
-}
