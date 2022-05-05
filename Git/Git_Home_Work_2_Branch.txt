@@ -48,7 +48,7 @@ git push
 
 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 
-раздел - compare & and pull request
+раздел - compare & and pull request + подтвердить из какой ветки и куда будет мержиться
 
 
 10. Синхронизировать Внешнюю и Локальную ветки Main
