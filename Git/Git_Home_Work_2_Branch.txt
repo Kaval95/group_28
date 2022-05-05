@@ -1,57 +1,57 @@
-1. На локальном репозитории сделать ветки для:
-- Postman
-- Jmeter
-- Check_Lists
-- Bag_Reports
-- SQL
-- Charles
-- Mobile testing
+ 1. На локальном репозитории сделать ветки для:
+ - Postman
+ - Jmeter
+ - Check_Lists
+ - Bag_Reports
+ - SQL
+ - Charles
+ - Mobile testing
 
 git branch "название ветки"
 
-2. Запушить все ветки на внешний репозиторий
+ 2. Запушить все ветки на внешний репозиторий
 
 git push -u origin "название ветки"
 
-3. В ветке Bag_Reports сделать текстовый документ со структурой баг репорта
+ 3. В ветке Bag_Reports сделать текстовый документ со структурой баг репорта
 
 git checkout Bag_Reports
-vim bug_report.txt
+vim bug_report.txt и написать структуру
 
-4. Запушить структуру багрепорта на внешний репозиторий
+ 4. Запушить структуру багрепорта на внешний репозиторий
 
 git add .
 git commit -m "add bug_report"
 git push
 
-5. Вмержить ветку Bag_Reports в Main
+ 5. Вмержить ветку Bag_Reports в Main
 
 git checkout main
 git merge Bag_Reports
 
-6. Запушить main на внешний репозиторий.
+ 6. Запушить main на внешний репозиторий.
 
 git add .
 git commit -m "marge main | Bug_Report"
 git push
 
-7. В ветке Check_Lists набросать структуру чек листа.
+ 7. В ветке Check_Lists набросать структуру чек листа.
 
 git checkout Check_Lists 
-vim Check_Lists.txt
+vim Check_Lists.txt и написать стуктуру
 
-8. Запушить структуру на внешний репозиторий
+ 8. Запушить структуру на внешний репозиторий
 
 git add .
 git commit -m "add check"
 git push
 
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ 9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
 
 раздел - compare & and pull request + подтвердить из какой ветки и куда будет мержиться
 
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+ 10. Синхронизировать Внешнюю и Локальную ветки Main
 
 git checkout main
 git fetch
