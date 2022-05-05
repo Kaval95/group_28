@@ -1,0 +1,11 @@
+id
+title
+summary
+steps to reproduce
+actual result,
+expected result
+attachment
+severity 
+priority
+environmen
+build version
