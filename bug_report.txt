@@ -2,7 +2,7 @@ id
 title
 summary
 steps to reproduce
-actual result,
+actual result
 expected result
 attachment
 severity 
