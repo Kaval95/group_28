@@ -110,7 +110,7 @@ SELECT min(id) FROM students;
 SELECT max(id) FROM students;
 
  29. Вывести количество пользователей.
-SELECT count(id) FROM students;
+SELECT COUNT(id) FROM students;
 
  30. Вывести id пользователя, имя, дату создания пользователя. Отсортировать по порядку возрастания даты добавления пользоватлеля.
 SELECT id, name, created_on FROM students
@@ -119,3 +119,19 @@ ORDER BY created_on ASC;
  31. Вывести id пользователя, имя, дату создания пользователя. Отсортировать по порядку убывания даты добавления пользоватлеля.
 SELECT id, name, created_on FROM students
 ORDER BY created_on DESC;
+
+ 32. Посчитайте сумму всех значений из столбца square.
+SELECT SUM(square) FROM continents;
+
+ 33. Сделайте выборку названий фильмов и их режиссёров (фильмы без режиссеров не должны быть в выборке).
+SELECT film.name, director.director_name FROM film
+JOIN director
+ON film.director_id = director.id;
+
+ 34. Кто является режиссёром фильма godfather и lord of the rings3? (вывести имя фильма и режиссёра).
+SELECT film.name, director.director_name FROM film
+JOIN director
+ON film.director_id = director.id
+WHERE film.name = 'godfather'
+OR film.name = 'lord of the rings3'; 
+
