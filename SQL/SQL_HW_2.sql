@@ -1,6 +1,6 @@
 SQL HomeWork 2
 
- 1. Создать таблицу employee
+ 1. Создать таблицу employee.
 
 CREATE TABLE employees (
 	id serial primary key,
@@ -12,16 +12,16 @@ CREATE TABLE employees (
 INSERT INTO employees (employee_name)
 	VALUES ('Thomas'); - .... и + еще 69 имен.
 
- 3. Создать таблицу salary_1
+ 3. Создать таблицу salary.
 
-CREATE TABLE salary_1 (
+CREATE TABLE salary (
 	id serial primary key,
 	monthly_salary int NOT NULL
 );
 
  3. Наполнить таблицу salary 16 строками.
 
-INSERT INTO salary_1 (monthly_salary)
+INSERT INTO salary (monthly_salary)
 	VALUES  (1000); - .... и + еще 15 значений.
 
  4. Создать таблицу employee_salary.
@@ -105,14 +105,14 @@ WHERE monthly_salary < 2000;
 
  13. Вывести все зарплатные позиции, но работник по ним не назначен (ЗП есть, но не понятно кто её получает).
 
-SELECT employees.employee_name, salary.monthly_salary FROM employee_salary left
-JOIN employees ON employees.id = employee_salary.employee_id
+SELECT employees.employee_name, salary.monthly_salary FROM employee_salary
+LEFT JOIN employees ON employees.id = employee_salary.employee_id
 JOIN salary ON salary.id = employee_salary.salary_id;
 
- 14. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен (ЗП есть, но не понятно кто её получает).
+ 14. Вывести все зарплатные позиции меньше 2000 но работник по ним не назначен (ЗП есть, но не понятно кто её получает).
 
-SELECT employees.employee_name, salary.monthly_salary FROM employee_salary left 
-JOIN employees ON employees.id = employee_salary.employee_id
+SELECT employees.employee_name, salary.monthly_salary FROM employee_salary 
+LEFT JOIN employees ON employees.id = employee_salary.employee_id
 JOIN salary ON salary.id = employee_salary.salary_id
 WHERE monthly_salary < 2000;
 
@@ -150,7 +150,7 @@ JOIN roles_employee ON employees.id = roles_employee.employee_id
 JOIN roles ON roles.id = roles_employee.role_id
 WHERE role_name LIKE '%Manual QA%'
 
- 20. Вывести имена и должность автоматизаторов QA
+ 20. Вывести имена и должность автоматизаторов QA.
 
 SELECT employees.employee_name, role_name FROM employees
 JOIN roles_employee ON employees.id = roles_employee.employee_id
