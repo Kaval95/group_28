@@ -7,7 +7,7 @@ CREATE TABLE employees (
 	employee_name varchar(50) NOT NULL
 );
 
- 2.	Наполнить таблицу employee 70 строками.
+ 2. Наполнить таблицу employee 70 строками.
 
 INSERT INTO employees (employee_name)
 	VALUES ('Thomas'); - .... и + еще 69 имен.
